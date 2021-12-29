@@ -1,0 +1,149 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: rgb(221, 207, 207);
+}
+.header {
+    background: linear-gradient(to bottom right, rgba(240, 53, 7, 0.993), rgba(0, 0, 0, 0.877));
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+h1 { 
+    margin-left: 20px;
+    width: 35%;
+    text-align: center;
+}
+
+span {
+    color: black;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+    padding: 20px;
+}
+      
+.nav a {
+    color: #eff1ed;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: large;
+}
+
+.nav a:hover {
+    color: rgb(15, 91, 233);
+}
+
+.belowHead {
+    background: url("./images/deve\ code2.jpg");
+    background-position: center;
+    padding: 120px;
+
+}
+
+.belowHead h1 {
+    color: whitesmoke;
+    background-color: none;
+    border-radius: 5px;
+    float: right;
+    padding: 1px;
+    width: fit-content;
+    margin-top: 20px;
+}
+.section1{
+    background: linear-gradient(to left bottom, rgb(88, 3, 3), rgba(240, 53, 7, 0.993), rgb(129, 24, 24));
+    width: 100%;
+    height: 400px;
+    padding-top: 20px;
+
+}
+.section1 img {
+    float: left;
+    height: 300px;
+    width: 250px;
+    margin-left: 120px; margin-top: 40px;
+    box-shadow:  4px 8px 0 rgba(10, 10, 10, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.705);
+}
+.section1 h2, .section1 p {
+    color: whitesmoke;
+    width: 60%;
+    margin-left: 460px;
+    text-align: center;
+}
+
+.Projects {
+    outline: red solid 1px;
+    text-align: center;
+    margin: 0; 
+    padding: 1px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 65%;
+    align-items: center;
+    padding: 20px;
+    margin-left: auto;
+    border-left: coral solid 10px;
+}
+
+.LA, .pokemon, .css, .excel {
+    margin: 15px;
+    height: 180px;
+    width: 280px;
+    border: solid 5px coral
+}
+
+.java {
+    height: 450px;
+    width: 650px;
+    border: solid 5px coral;
+    background: url("./images/java-hawaii.jpg");
+    background-size: cover;
+}
+
+.LA {
+    background: url("./images/Los\ Angeles\ DT.jpg");
+    background-size: cover;
+}
+
+.pokemon {
+    background: url("./images/POKE.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.css {
+    background: url("./images/css.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.excel {
+    background: url();
+    background-position: center;
+    background-size: cover;
+}
+
+.container1 a {
+    color: coral;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: medium
+
+}

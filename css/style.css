@@ -1,0 +1,19 @@
+.header {
+    background: lightblue;
+    color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 { 
+    margin-left: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+}
