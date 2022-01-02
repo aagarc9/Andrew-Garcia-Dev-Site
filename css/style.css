@@ -5,11 +5,16 @@
 body {
     background: rgb(221, 207, 207);
 }
+
+html {
+    scroll-behavior: smooth;
+}
 .header {
-    background: linear-gradient(to bottom right, rgba(240, 53, 7, 0.993), rgba(0, 0, 0, 0.877));
+    background: linear-gradient(to bottom right, rgba(73, 56, 51, 0.993), rgba(0, 0, 0, 0.877));
     color: whitesmoke;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -26,29 +31,30 @@ h1 {
 }
 
 span {
-    color: black;
+    color: rgba(209, 35, 35, 0.993);
 }
 
 .nav li {
     display: inline-block;
     list-style: none;
-    margin: 10px;
+    margin: 5px;
     padding: 20px;
+
 }
       
 .nav a {
-    color: #eff1ed;
+    color: whitesmoke;
   font-weight: bold;
   text-decoration: none;
   font-size: large;
 }
 
 .nav a:hover {
-    color: rgb(15, 91, 233);
+    color: rgba(209, 35, 35, 0.993);
 }
 
 .belowHead {
-    background: url("./images/deve\ code2.jpg");
+    background: url("images/deve\ code2.jpg");
     background-position: center;
     padding: 120px;
 
@@ -64,18 +70,18 @@ span {
     margin-top: 20px;
 }
 .section1{
-    background: linear-gradient(to left bottom, rgb(88, 3, 3), rgba(240, 53, 7, 0.993), rgb(129, 24, 24));
+    background: linear-gradient(to left bottom, rgb(88, 3, 3), rgba(209, 35, 35, 0.993), rgb(129, 24, 24));
     width: 100%;
     height: 400px;
     padding-top: 20px;
-
+    flex-wrap: wrap;
 }
 .section1 img {
     float: left;
     height: 300px;
     width: 250px;
     margin-left: 120px; margin-top: 40px;
-    box-shadow:  4px 8px 0 rgba(10, 10, 10, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.705);
+    box-shadow:  4px 8px 0 rgba(5, 0, 0, 0.616), 0 6px 20px 0 rgba(0, 0, 0, 0.658);
 }
 .section1 h2, .section1 p {
     color: whitesmoke;
@@ -85,51 +91,60 @@ span {
 }
 
 .Projects {
-    outline: red solid 1px;
     text-align: center;
-    margin: 0; 
+    text-decoration: underline;
+    margin-top: 50px;
     padding: 1px;
+    width: 25%;
+    float: left;
+    color: rgba(209, 35, 35, 0.993);
+    font-size: 22px;
 }
 
 .container1 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 65%;
+    width: 70%;
     align-items: center;
-    padding: 20px;
+    padding: 10px; 
+    padding-top: 50px;
     margin-left: auto;
-    border-left: coral solid 10px;
+    border-left: rgba(209, 35, 35, 0.993) solid 10px;
 }
 
+a:hover {
+    opacity: 0.7;
+}
 .LA, .pokemon, .css, .excel {
-    margin: 15px;
+    margin: 10px;
     height: 180px;
     width: 280px;
-    border: solid 5px coral
+    border: solid 5px rgba(209, 35, 35, 0.993);
 }
 
 .java {
-    height: 450px;
-    width: 650px;
-    border: solid 5px coral;
-    background: url("./images/java-hawaii.jpg");
+    height: 400px;
+    width: 675px;
+    border: solid 5px rgba(209, 35, 35, 0.993);
+    background: url("images/java-hawaii.jpg");
     background-size: cover;
+    margin-bottom: 20px;
 }
 
 .LA {
-    background: url("./images/Los\ Angeles\ DT.jpg");
+    background: url("images/Los\ Angeles\ DT.jpg");
     background-size: cover;
 }
 
 .pokemon {
-    background: url("./images/POKE.jpg");
+    background: url("images/POKE.jpg");
     background-position: center;
     background-size: cover;
 }
 
 .css {
-    background: url("./images/css.jpg");
+    background: url("images/css.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -141,9 +156,100 @@ span {
 }
 
 .container1 a {
-    color: coral;
+    color: rgba(209, 35, 35, 0.993);
   font-weight: bold;
   text-decoration: none;
-  font-size: medium
+  font-size: medium;
+  text-align: end;
+  padding: 10px;
+}
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right bottom, rgb(88, 3, 3), rgba(209, 35, 35, 0.993), rgb(129, 24, 24));
+    margin-top: 20px;
+    padding: 1px;
+    width: 100%;
+    font-size: 22px;
+}
+
+.footer li {
+    display: inline-block;
+    flex-basis: 70%;
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+    flex-grow: 1;
+    color: whitesmoke;
+}
+
+.footer h2 {
+    flex-basis: 30%;
+    text-align: center;
+    flex-grow: 0;
+    color:whitesmoke;
+}
+
+@media screen and (min-width: 1490px) {
+    .java {
+        width: 1000px;
+    }
+    .LA, .pokemon, .css, .excel {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header, .footer {
+        flex-direction: column;
+        width: 100%;
+    }
+    .section1 h2, .section1 p {
+        display: block;
+        float: left;
+        width: 95%;
+        margin: 10px;
+    }
+
+    .section1 img {
+        width: 40%;
+        margin-left: 250px;
+
+    }
+    .section1 {
+        height: 600px;
+        width: 100%;
+        
+    }
+    .Projects, .container1 {
+        margin: 15px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav li, .footer, .footer li {
+        display: block;
+        float: inline-start;
+
+    }
+    
+    .section1 h2, .section1 p {
+        display: block;
+        float: left;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .section1 img {
+        width: 60%;
+        margin-left: 100px;
+
+    }
+    .Projects, .container1 {
+        margin: 10px;
+        width: 95%;
+    }
 }

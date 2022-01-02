@@ -11,14 +11,14 @@
     
     <body>
         <header class="header">
-            <img src="./images/ag.png">
+            <img src="./css/images/ag.png">
             <h1><span>Garcia</span> Dev Portfolio</h1>
             <nav class="nav">
                 <ul>
-                    <li><a href="#">Contact</a></li>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#container1">Projects</a></li>
+                    <li><a href="#section1">About Me</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,24 +27,30 @@
             <div class="belowHead">
                 <h1>"Hello World" </h1>
             </div>
-            <div class="section1">
-                <img src="images/IMG-6562.jpg">
-                <h2>About Me!</h2>
-                <p> Hello, My name is Andrew and I am a web developer. I am excited the share some of the projects and site I've been working on.</p>
+            <div class="section1" id="section1">
+                <img src="./css/images/IMG-6562.jpg">
+                <h2><strong>About Me!</strong></h2>
+                <p> Hello, My name is Andrew and I am a web developer. I am excited to share some of the projects and site I've been working on.</p>
             </div>
             <div class="Projects">
                 <h2>My Projects</h2>
             </div>
-            <div class="container1">
-                <a class="java" href="#"> javascript coding</a>
+            <div class="container1" id="container1">
+                <a class="java" href="https://aagarc9.github.io/prework-about-me/"> First Project (About Me)</a>
                 <a class="LA" href="#"> Los Angeles Website</a>
                 <a class="pokemon"href="#"> pokemon projects</a>
                 <a class="css" href="#"> css refactoring</a>
                 <a class="excel" href="#"> excel projects</a>
             </div>
         </main>
-        <footer>
+        <footer class="footer" id="contact"> 
             <h2>Contact Me</h2>
+            <ul>
+                <li>LinkedIn</li>
+                <li>Gmail</li>
+                <li>Github</li>
+                <li>Phone</li>
+            </ul>
         </footer>
     </body>
 </html>
