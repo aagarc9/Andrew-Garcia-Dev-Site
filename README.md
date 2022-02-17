@@ -8,7 +8,7 @@ This application is a demonstration of my coding skills and knowledge on the top
 
 2. You will see projects that I have created in UCI web developer course.
 
-3. You will see my use of CSS to create the portfolio from scratch. (flexbox, CSS var, and media queries.)
+3. You will see my use of CSS to create the portfolio from scratch. (flexbox, CSS var, and media queries.)g
 
 #Link to stie
 
