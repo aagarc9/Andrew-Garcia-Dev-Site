@@ -185,6 +185,11 @@ a:hover {
     color: whitesmoke;
 }
 
+.footer a {
+    list-style: none;
+    color: whitesmoke;
+}
+
 .footer h2 {
     flex-basis: 30%;
     text-align: center;
